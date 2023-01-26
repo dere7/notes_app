@@ -1,0 +1,21 @@
+POST http://localhost:4000/api/notes
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpZCI6IjYzYjJlNTZlMWI3YjI3YjA3Yjc1MWM2OSIsImVtYWlsIjoiam9obkBleGFtcGxlLmNvbSJ9.0Xzk6t073jRhyR39VnJvMaJSS6D5e7QUTY7NJMAQTTA
+
+{
+    "title": "Getting started with Node.js",
+    "body": "Node.js is javascript runtime that enables us to develop server and other applications beyond web"
+}
+
+###
+http://localhost:4000/api/notes
+###
+http://localhost:4000/api/notes/63b302c839cbb4c4eaf5e6a1
+###
+PUT http://localhost:4000/api/notes/63b302c839cbb4c4eaf5e6a1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpZCI6IjYzYjJlNTZlMWI3YjI3YjA3Yjc1MWM2OSIsImVtYWlsIjoiam9obkBleGFtcGxlLmNvbSJ9.0Xzk6t073jRhyR39VnJvMaJSS6D5e7QUTY7NJMAQTTA
+
+{
+    "title": "Getting started with Node.js & Express.js"
+}

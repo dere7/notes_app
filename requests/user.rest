@@ -1,0 +1,21 @@
+POST http://localhost:4000/api/users
+Content-Type: application/json
+
+{
+    "fullName": "John Doe",
+    "email": "john@example.com",
+    "password": "john123"
+}
+###
+POST http://localhost:4000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "john@example.com",
+    "password": "john123"
+}
+
+###
+
+http://localhost:4000/api/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpZCI6IjYzYjJlNTZlMWI3YjI3YjA3Yjc1MWM2OSIsImVtYWlsIjoiam9obkBleGFtcGxlLmNvbSJ9.0Xzk6t073jRhyR39VnJvMaJSS6D5e7QUTY7NJMAQTTA
